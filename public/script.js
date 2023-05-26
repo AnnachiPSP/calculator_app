@@ -4,20 +4,15 @@ let currentExpression = '';
 let operation = '';
 
 function appendToDisplay(value) {
-    if(value == '+' || value == '/' || value == '*' || value == '%' || value == '-'){
-        displayBox.value = '';
-        operation = value;
-        currentExpression += value;
-        if(value == '+'){operation = 'SUM';}
-        else if(value == '*'){operation = 'MULTIPLY';}
-        else if(value == '-'){operation = 'SUBTRACT';}
-        else if(value == '%'){operation = 'PERCENTAGE';}
-        else if(value == '/'){operation='DIVIDE';}
-    }
-    else{
-        currentExpression += value
-        displayBox.value += value;
-    }
+
+    if(value == '+'){operation = 'SUM';}
+    else if(value == '*'){operation = 'MULTIPLY';}
+    else if(value == '-'){operation = 'SUBTRACT';}
+    else if(value == '%'){operation = 'PERCENTAGE';}
+    else if(value == '/'){operation='DIVIDE';}
+    currentExpression += value
+    displayBox.value += value;
+    
 }
 
 function clearDisplay() {
