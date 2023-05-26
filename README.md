@@ -18,4 +18,15 @@ Feel free to visit the [APP](https://calculator-app-2ojp.onrender.com).
     - 'BackSpace' key for 'Clear'
     - 'Enter' or '=' for executing the calculation '='
     - '0-9', '+-*/%'
-To fornkfn;kn
+
+## Hosting
+
+To host the web application from your own system, plese the steps:
+
+1. Clone the repository to the system
+2. navigate to the root directory in your command line
+3. Run `node index.js` 
+4. In your Respective Web browser, please follow the link `http://localhost:3000/`
+
+Thank YOU..
+ 
