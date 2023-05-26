@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="main">
+      <input id="displayBox" type="text" name="calculated_area" readonly>
+      <table class="btn">
+        <tr>
+          <td><button onclick="appendToDisplay('7')">7</button></td>
+          <td><button onclick="appendToDisplay('8')">8</button></td>
+          <td><button onclick="appendToDisplay('9')">9</button></td>
+          <td><button class="diff" onclick="appendToDisplay('+')" name="SUM">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDisplay('4')">4</button></td>
+          <td><button onclick="appendToDisplay('5')">5</button></td>
+          <td><button onclick="appendToDisplay('6')">6</button></td>
+          <td><button class="diff" onclick="appendToDisplay('-')" name="SUBTRACT">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="appendToDisplay('1')">1</button></td>
+          <td><button onclick="appendToDisplay('2')">2</button></td>
+          <td><button onclick="appendToDisplay('3')">3</button></td>
+          <td><button class="diff" onclick="appendToDisplay('*')" name="MULTIPLY">*</button></td>
+        </tr>
+        <tr>
+          <td><button class="diff" onclick="appendToDisplay('.')">.</button></td>
+          <td><button class="diff" onclick="appendToDisplay('0')">0</button></td>  
+          <td><button class="diff" onclick="appendToDisplay('%')" name="PERCENTAGE">%</button></td>
+          <td><button class="diff" onclick="appendToDisplay('/')" name="DIVIDE">/</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button class="diff bottom" onclick="clearDisplay()">Clear</button></td>
+          <td colspan="2"><button class="diff bottom" onclick="calculate()">=</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="lists">
+      <h1 class="listhead">Calculation List</h1>
+      <table  id="calculationList">
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>CALCULATION</th>
+            <th>RESULT</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Insertion -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+  <script src="https://kit.fontawesome.com/bbcc44db3d.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
